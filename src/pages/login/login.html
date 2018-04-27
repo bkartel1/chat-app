@@ -1,0 +1,17 @@
+<ion-content padding class="red-theme">
+    <img src="" alt="">
+    <ion-list class="login-form">
+        <ion-item>
+            <ion-label >Email</ion-label>
+            <ion-input type="text" value="" [(ngModel)]="email" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label >Senha</ion-label>
+            <ion-input type="password" [(ngModel)]="password" required></ion-input>
+        </ion-item>
+    </ion-list>
+
+    <div class="login-btn">
+        <button ion-button outline color="light" (click)="login()">LOGIN</button>
+    </div>
+</ion-content>

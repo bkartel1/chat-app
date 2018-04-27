@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Palestras</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="theme">
+  <div *ngIf="nextLectures.length == 0">
+    <p class="white-text">Não há nenhuma palestra.</p>
+  </div>
+  <div *ngIf="nextLectures.length > 0">
+    <ion-card *ngFor="let lecture of nextLectures">
+      <ion-card-header>
+        {{ lecture.title }}
+      </ion-card-header>
+      <ion-card-content>
+        <p>Dia {{ lecture.formattedDate }} às {{ lecture.formattedTime }}</p>
+        <p>{{ lecture.description }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

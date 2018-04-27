@@ -1,0 +1,25 @@
+<ion-header class="theme">
+  <ion-navbar>
+    <ion-title>
+      Converse com Watson <img src="assets/imgs/avatar_watson_white.png" class="watson-icon">
+    </ion-title>    
+  </ion-navbar>
+</ion-header>
+
+  <!-- Chat -->
+  <div class="chatHandler theme">
+    <ion-content class="theme">
+      <div class="chat_body" id="chat_body">
+        
+      </div>
+    </ion-content>
+    <div class="chat_footer">
+      <ion-item class="chat-input">
+        <ion-input type="text" placeholder="Escreva uma mensagem..." id="chat_input" [(ngModel)]="message" (keyup.enter)="sendUserMessage(message)"></ion-input>
+      </ion-item>
+      <button ion-button icon-only clear (click)="sendUserMessage(message)">
+        <ion-icon name="md-send" class="send-btn"></ion-icon>
+      </button>
+    </div>
+  </div>
+

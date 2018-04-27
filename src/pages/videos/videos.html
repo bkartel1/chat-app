@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Vídeos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="theme" padding>
+  <div *ngIf="videos.length != 0">
+    <ion-card *ngFor="let video of videos" class="cards">
+      <a href="{{ video.tinyurl }}">
+        <img src="{{ video.thumbnail.default }}"/>
+      </a>
+      <ion-card-header class="text">
+        {{ video.title }}
+      </ion-card-header>
+      <ion-card-content>
+        {{ video.description }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div *ngIf="videos.length == 0">
+    <p class="white-text">Não há nenhum vídeo.</p>
+  </div>
+</ion-content>
