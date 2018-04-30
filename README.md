@@ -1,6 +1,6 @@
 # Chat App
 
-Hybrid mobile chat application using Ionic Framework.
+Hybrid mobile chat application using Ionic Framework. The app also retrieves a list of lectures and videos.
 
 ## Getting Started
 
@@ -10,7 +10,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 Before installing the project, download and install the following prerequisites.
 
-* [Node.js](https://nodejs.org/en/)
 * [npm](https://www.npmjs.com/)
 
 ### Installing
